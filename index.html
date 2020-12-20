@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>COOL GENSHIN APP ԅ(≖‿≖ԅ)</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div id="modal" class="hidden">
+    <div class="title">Users</div>
+    <div class="list">
+      <div class="tag">Keqing</div>
+      <div class="tag">Diluc</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="widget">
+        <div id="currentDay" class="widget-title"></div>
+        <div id="resources" class="list"></div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-title">timer for resources</div>
+        <div id="timers"></div>
+      </div>
+
+      <div id="resin" class="widget">
+        <p>resin</p>  
+      </div>
+      <!--
+      <div class="widget">
+        <p>stopwatch for runs (artifact run)</p> 
+      </div>
+      <div class="widget">
+        <p>primo to pull converter</p>
+      </div>
+      <div class="widget">
+        <p>monthly primo tracker</p>
+      </div>
+      -->
+
+      <div class="widget">
+        <h2>Shield break</h2>
+        <p>Hydro breaks Pyro</p>
+        <p>Pyro breaks Cryo</p>
+        <p>Cryo breaks Hydro</p>
+        <p>Electro breaks hydro</p>
+        <p>Cryo breaks electro</p>
+        <p>geo breaks geo</p>
+        <p>pyro breaks dendro</p>
+      </div>
+
+      <div class="widget">
+        <h2>Links</h2>
+        <a href="https://www.reddit.com/r/Genshin_Impact/comments/jop1s4/places_to_get_raw_meat_50_pieces_in_around_15/">Meat route</a>
+        <a href="https://www.reddit.com/r/Genshin_Impact/comments/k95ghd/violet_grass_farm_2530_per_run_for_those_farming/">violet grass things</a>
+        <a href="https://www.reddit.com/r/Genshin_Impact/comments/jw3mui/50_crabs_under_15_min_make_sure_to_check_the_vid/">craph 〜(꒪꒳꒪)〜</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/dayjs.min.js"></script>
+  <!-- <script src="https://unpkg.com/dayjs@1.8.21/plugin/relativeTime.js"></script> -->
+  <script src="js/plugins.js"></script>
+
+  <script src="js/data.js"></script>
+  <script src="js/domains.js"></script>
+  <script src="js/timers.js"></script>
+  <script src="js/resin.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
