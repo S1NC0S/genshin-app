@@ -22,6 +22,27 @@ html {
   line-height: 1.4;
 }
 
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.widget-button {
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 4px;
+}
+
+.widget-button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: .2s all ease-in-out;
+}
+
 .container {
   width: 100vw;
   padding: 20px;
