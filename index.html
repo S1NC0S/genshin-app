@@ -6,23 +6,28 @@
   <title>COOL GENSHIN APP ԅ(≖‿≖ԅ)</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-
+  
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <div class="bg">
+    <div class="bg-img"></div>
+    <div class="bg-dark"></div>
+  </div>
+  
   <div id="modal" class="hidden">
     <div class="title">Users</div>
     <div class="list">
@@ -30,30 +35,26 @@
       <div class="tag">Diluc</div>
     </div>
   </div>
+  
   <div class="container">
-    <div class="row">
-
-      <div class="widget">
-        <div id="currentDay" class="widget-title"></div>
-        <div id="resources" class="list"></div>
-      </div>
-
-      <div class="widget">
-        <div class="widget-title">timer for resources</div>
-        <div id="timers"></div>
-      </div>
-
-      <div id="resin" class="widget">
-        <p>resin</p>  
-      </div>
-
-      <div class="widget">
-        <div class="widget-title">THINGIES TO DO OWO</div>
-        <div class="widget-container">
+    <div class="widget">
+      <div id="currentDay" class="widget-title"></div>
+      <div id="resources" class="list"></div>
+    </div>
+    
+    <div class="widget">
+      <div class="widget-title">timer for resources</div>
+      <div id="timers"></div>
+    </div>
+    
+    <div class="widget">
+      <div class="widget-title">THINGIES TO DO OWO</div>
+      <div class="reminders">
+        <div class="subcontainer">
           <div class="subtitle">daily</div>
           <div id="daily-reminder"></div>
         </div>
-        <div class="widget-container">
+        <div class="subcontainer">
           <div class="subtitle">weekly</div>
           <div class="widget-button">stormterror</div>
           <div class="widget-button">childe</div>
@@ -62,50 +63,39 @@
           <div class="widget-button">requests</div>
         </div>
       </div>
-      
-      
-      <!--
-      <div class="widget">
-        <p>stopwatch for runs (artifact run)</p> 
-      </div>
-      <div class="widget">
-        <p>primo to pull converter</p>
-      </div>
-      <div class="widget">
-        <p>monthly primo tracker</p>
-      </div>
-      -->
-
-      <div class="widget">
-        <h2>Shield break</h2>
-        <p>Hydro breaks Pyro</p>
-        <p>Pyro breaks Cryo</p>
-        <p>Cryo breaks Hydro</p>
-        <p>Electro breaks hydro</p>
-        <p>Cryo breaks electro</p>
-        <p>geo breaks geo</p>
-        <p>pyro breaks dendro</p>
-        <p>dumpling breaks cina's nyumsh</p>
-        <p>cina breaks dumpling by fok</p>
-      </div>
-
-      <div class="widget">
-        <h2>Links</h2>
-        <a href="https://www.reddit.com/r/Genshin_Impact/comments/jop1s4/places_to_get_raw_meat_50_pieces_in_around_15/">Meat route</a>
-        <a href="https://www.reddit.com/r/Genshin_Impact/comments/k95ghd/violet_grass_farm_2530_per_run_for_those_farming/">violet grass things</a>
-        <a href="https://www.reddit.com/r/Genshin_Impact/comments/jw3mui/50_crabs_under_15_min_make_sure_to_check_the_vid/">craph 〜(꒪꒳꒪)〜</a>
-      </div>
-
     </div>
-  </div>
+    
+    <div class="widget">
+      <div class="widget-title">Shield break</div>
+      <div class="list-item">Hydro breaks Pyro</div>
+      <div class="list-item">Pyro breaks Cryo</div>
+      <div class="list-item">Cryo breaks Hydro</div>
+      <div class="list-item">Electro breaks hydro</div>
+      <div class="list-item">Cryo breaks electro</div>
+      <div class="list-item">geo breaks geo</div>
+      <div class="list-item">pyro breaks dendro</div>
+    </div>
+    
+    <div class="widget links">
+      <div class="widget-title">Links</div>
+      <div class="list-item"><a href="https://www.reddit.com/r/Genshin_Impact/comments/jop1s4/places_to_get_raw_meat_50_pieces_in_around_15/">Meat route</a></div>
+      <div class="list-item"><a href="https://www.reddit.com/r/Genshin_Impact/comments/k95ghd/violet_grass_farm_2530_per_run_for_those_farming/">violet grass things</a></div>
+      <div class="list-item"><a href="https://www.reddit.com/r/Genshin_Impact/comments/jw3mui/50_crabs_under_15_min_make_sure_to_check_the_vid/">craph 〜(꒪꒳꒪)〜</a></div>
+    </div>
 
+    
+    <div id="resin" class="widget">
+      <div class="widget-title">Resin</div>  
+    </div>
+    
+  </div>
+  
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/dayjs.min.js"></script>
-  <!-- <script src="https://unpkg.com/dayjs@1.8.21/plugin/relativeTime.js"></script> -->
   <script src="js/plugins.js"></script>
-
+  
   <script src="js/data.js"></script>
   <script src="js/domains.js"></script>
   <script src="js/timers.js"></script>

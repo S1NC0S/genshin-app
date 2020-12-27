@@ -22,6 +22,24 @@ html {
   line-height: 1.4;
 }
 
+.bg, .bg-img, .bg-dark {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img {
+  background: url('../img/wp1.jpg');
+  background-size: cover;
+}
+
+.bg-dark {
+  background: rgba(0,0,0,.7);
+}
+
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -43,11 +61,23 @@ html {
   transition: .2s all ease-in-out;
 }
 
+.reminders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+}
+
 .container {
   width: 100vw;
   padding: 20px;
   box-sizing: border-box;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+}
+
+.subcontainer {
+  margin: 0 5px 0 0;
 }
 
 .row {
@@ -56,9 +86,8 @@ html {
 }
 
 .widget {
-  border: 1px solid #000;
-  padding: 20px;
-  background: #222;
+  padding: 15px;
+  background: rgba(0,0,0,.7);
   margin: 5px;
 }
 
@@ -88,6 +117,10 @@ html {
 .list {
   display: flex;
   flex-wrap: wrap;
+}
+
+a {
+  color:  #fff;
 }
 
 .tag {

@@ -10,7 +10,7 @@ document.getElementById("currentDay").innerHTML = daynames[day]
 let loadRessource = (item) => {
   var div = document.createElement("div")
   div.classList.add("tag")
-  div.innerHTML = `<img src="img/${data.itemImages[item]}"><p>${item}</p>`
+  div.innerHTML = `<img src="img/items/${data.itemImages[item]}"><p>${item}</p>`
   
   // fill in content
   document.getElementById("resources").appendChild(div)
@@ -22,7 +22,7 @@ let loadRessource = (item) => {
     // 
     let input = ""
     data.talents[item].forEach((tag) => {
-      input += `<div class="tag"><img src="img/Character_${tag}_Thumb.png"><p>${tag}</p></div>`
+      input += `<div class="tag"><img src="img/characters/Character_${tag}_Thumb.png"><p>${tag}</p></div>`
     })
     // add it all to the modal box
     modal.innerHTML = `<div class="list">${input}</div>`
