@@ -22,6 +22,9 @@ html {
   line-height: 1.4;
 }
 
+/* ----------------------------------------------------------------------------------------------------- */
+/* BACKGROUND */
+/* ----------------------------------------------------------------------------------------------------- */
 .bg, .bg-img, .bg-dark {
   position: fixed;
   z-index: -1;
@@ -37,35 +40,15 @@ html {
 }
 
 .bg-dark {
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.6);
 }
 
-.subtitle {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 10px 0;
-  text-align: center;
-  width: 100%;
-}
 
-.widget-button {
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 4px;
-}
 
-.widget-button:hover {
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  transition: .2s all ease-in-out;
-}
 
-.reminders {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: masonry;
-}
+/* ----------------------------------------------------------------------------------------------------- */
+/* WIDGET */
+/* ----------------------------------------------------------------------------------------------------- */
 
 .container {
   width: 100vw;
@@ -87,8 +70,9 @@ html {
 
 .widget {
   padding: 15px;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.8);
   margin: 5px;
+  border-radius: 8px;
 }
 
 .widget h1 {
@@ -99,12 +83,52 @@ html {
 }
 
 .widget-title {
-  color: rgb(132, 247, 65);
+  color: #fff;
+  /* color: rgb(132, 247, 65); */
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0 0 7px 0;
   margin: 0;
+}
+
+.widget-button {
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 4px;
+}
+
+.widget-button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: .2s all ease-in-out;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* RESIN WIDGET */
+/* ----------------------------------------------------------------------------------------------------- */
+.resin-input {
+  background: none;
+  color: rgb(132, 247, 65);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.reminders {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: masonry;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .title {
@@ -126,14 +150,15 @@ a {
 .tag {
   text-align: center;
   display: grid;
-  background: #555;
+  background: #333;
   border-radius: 3px;
   padding: 10px 10px;
   margin: 0px 5px 3px 0;
 }
 
 .tag img {
-  max-width: 80px;
+  max-width: 100px;
+  max-height: 100px;
   margin: 0;
 }
 
