@@ -1,5 +1,5 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyAcfUNIYDNSaZSb4DwHUMhgRYGWds6oE0w",
+    apiKey: "", // add later
     authDomain: "nest-16f79.firebaseapp.com",
     databaseURL: "https://nest-16f79.firebaseio.com",
     projectId: "nest-16f79",
